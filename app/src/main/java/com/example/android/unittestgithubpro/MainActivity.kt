@@ -10,4 +10,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
+
+    fun checkNum(num: Int): Boolean {
+        if (num == 2)
+            return true
+        return false
+    }
+
 }
