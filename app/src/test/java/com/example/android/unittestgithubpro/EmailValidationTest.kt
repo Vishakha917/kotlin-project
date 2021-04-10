@@ -20,5 +20,4 @@ class EmailValidationTest {
         assertThat(result).isFalse()
     }
 
-
 }

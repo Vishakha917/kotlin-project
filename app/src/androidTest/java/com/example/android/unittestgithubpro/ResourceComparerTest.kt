@@ -7,7 +7,6 @@ import org.junit.Test
 
 class ResourceComparerTest {
 
-//    private lateinit var resourceComparer : ResourceComparer
     private val resourceComparer = ResourceComparer()
 
     @Test
