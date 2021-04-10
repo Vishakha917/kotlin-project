@@ -9,10 +9,22 @@ import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
     private val TAG = "MainActivity"
+    private var number: Int? = null
+    private var i = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+//        if (number != null)
+//            val number2 = number + 1
+
+        //REPLACEMENT OF ABOVE CODE
+        val x = number?.let {
+            val num2 = it + 1
+            num2 // let by default returns the last of let block.
+        } ?: 3 //defualt value.
+
 
 //        //It will delay the main thread and will block the UI
 //        runBlocking {
@@ -63,6 +75,10 @@ class MainActivity : AppCompatActivity() {
 
 //        Log.d(TAG, "Hello from the thread ${Thread.currentThread().name}")
     }
+
+    fun getSquareOfNum() = (i * i).also { i++ }
+
+    //fun getSquareOfNums() = (i * i).also { it++ } //Here `it` will return (i*i)
 
     suspend fun doNetworkCall(): String {
         delay(3000L)
