@@ -1,4 +1,4 @@
-package com.example.android.unittestgithubpro
+package com.example.android.unittestgithubpro.viewmodel
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel

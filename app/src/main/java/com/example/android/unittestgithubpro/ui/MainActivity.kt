@@ -1,7 +1,8 @@
-package com.example.android.unittestgithubpro
+package com.example.android.unittestgithubpro.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.android.unittestgithubpro.R
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.*
